@@ -347,29 +347,25 @@ footer{
     align-items: center;
 }
 .social-media{
-    height: 7rem;
+    height: 5rem;
     width: auto;
     text-align: center;
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: .2rem;
     justify-content: space-evenly;
     /* border: 1px solid green; */
 }
-.social-media a i{
-    height: 3rem;
-    width: 3rem;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+.sm a i{
+    padding: .5rem;
     text-align: center;
     font-size: 2rem;
     text-decoration: none;
-    background:#f2eacb;
-    /* gap: .5rem; */
     border-radius: 50%;
-    color: #000000;
+    color: #1f2937;
+    background: #bebebe;
 }
+
 .fa-facebook:hover{           
     color: #316ff6;
     transition: all .2s ease;

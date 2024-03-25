@@ -277,7 +277,7 @@
                 <img src="./assets/editing_04.jpg" alt="editing ">
             </div>
             <div class="contact-desc">
-                <p>Share your vision with us.we are ready to turn it into reality.
+                <p>Share your vision with us. we are ready to turn it into reality.
                     let's create magic together and bring ideas to life!</p>
             </div>
         </div>
@@ -287,18 +287,18 @@
                     contact us
                 </h2>
             </div>
-            <form id="contact-form" action="">
+            <form id="contact-form" method="post" action="">
                 <label for="client-name">Name: </label>
-                <input type="text" name="client-name" id="client-name" required />
+                <input class="input" type="text" name="client-name" id="client-name" required />
                 <label for="client-mail">email:</label>
-                <input type="email" name="client-mail" id="client-mail" required />
+                <input class="input"  type="email" name="client-mail" id="client-mail" required />
                 <label for="video-duration">video duration</label>
-                <input type="number" min="0" id="duration" name="video-duration" placeholder="Duration in minutes"
+                <input class="input" type="number" min="0" max="200" id="duration" name="video-duration" placeholder="Duration in minutes"
                     required />
                 <label for="client-message">your message</label>
-                <textarea name="client-message" id="message" rows="5">
+                <textarea  name="client-message" id="message" rows="5">
                 </textarea>
-                <input type="submit" name="submit" id="submit-btn">
+                <input  type="submit" name="submit" id="submit-btn">
             </form>
         </div>
     </div>
@@ -320,14 +320,6 @@
                 </div>
             </div>
             <div class="footer-items">
-                <h2>Our Services</h2>
-                <div class="footer-item">
-                    <a href="">Video Editing</a>
-                    <a href="">Audio Services</a>
-                    <a href="">Graphic Services</a>
-                </div>
-            </div>
-            <div class="footer-items">
                 <h2>Portolio</h2>
                 <div class="footer-item">
                     <a href="">Video Editing</a>
@@ -338,15 +330,14 @@
             <div class="footer-items">
                 <h2>Follow Us On</h2>
                 <div class="social-media">
-                    <div class="sm"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
-                    <div class="sm"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
-                    <div class="sm"><a href=""><i class="fa-brands fa-x-twitter"></i></a></div>
-                    <div class="sm"><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+                    <div class="sm"><a href="" title="Facebook"><i class="fa-brands fa-facebook"></i></a></div>
+                    <div class="sm"><a href="" title="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="sm"><a href="" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div>
                 </div>
             </div>
         </div>
         <div class="footer-row-lower">
-            <p class="copy-right"><i class="fa-regular fa-copyright"></i> 2024 www.thirdeyestudeos.com</p>
+            <p class="copy-right"><i class="fa-regular fa-copyright"></i> 2024 www.thirdeyestudeos.com | icons Credit <a href="https://www.flaticon.com/">Flaticon</a></p>
             <p class="dev-bar">Made with <i class="fa-solid fa-heart"></i> by <a href="">Third Eye Studios team.</a></p>
         </div>
     </footer>

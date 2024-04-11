@@ -7,6 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="contact-us-page">
+        <div class="contact-head">
+            <h1>Contact us</h1>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="">
+                <label for="client-name">Name: </label>
+                <input class="input" type="text" name="client-name" id="client-name" required />
+                <label for="client-mail">email:</label>
+                <input class="input"  type="email" name="client-mail" id="client-mail" required />
+                <label for="video-duration">video duration</label>
+                <input class="input" type="number" min="0" max="200" id="duration" name="video-duration" placeholder="Duration in minutes"
+                    required />
+                <label for="client-message">your message</label>
+                <textarea  name="client-message" id="message" rows="5">
+                </textarea>
+                <input  type="submit" name="submit" id="submit-btn">
+            </form>
+        </div>
+    </div>
 </body>
 </html>

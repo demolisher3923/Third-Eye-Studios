@@ -26,6 +26,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
     <title>Third Eye Studios</title>
 </head>
 
@@ -134,6 +135,33 @@
         </div>
     </div>
     <!-- service section end -->
+
+    <!-- about section start  -->
+
+    <div class="about-section">
+        <div class="about-head">
+            <h2>Our Journey in Frames: From Vision to Reality.</h2>
+        </div>
+        <div class="about-contents">
+            <p>
+                Heyy there ! we are Third Eye Studios, your creative partner for crafting captivating visual experiences.
+                Our team of passionate storytellers isn't just about video editing.
+                we translate your ideas into powerful visuals that resonate. 
+                From professional video editing and stunning motion graphics to eye-catching graphic design and flawless photo restoration, 
+                we offer a comprehensive suite of services to bring your vision to life. 
+                We understand the importance of every detail, from the subtle audio nuances to the perfect color correction in your photos. 
+                That's why we go the extra mile to deliver top-notch content that not only captivates your audience but also inspires them to take action. 
+                Whether you're brainstorming a promotional video, seeking to enhance the visual impact of your photos, or needing to polish your audio, 
+                we're here to collaborate and bring your vision to stunning reality.
+                Explore the possibilities with Third Eye Studios and let's craft something extraordinary together!</p>
+        </div>
+    </div>
+
+
+
+    <!-- about secttion end -->
+
+
     <!-- step card section start -->
     <div class="work-step-container">
         <div class="work-head">
@@ -282,16 +310,16 @@
             </div>
         </div>
         <div class="contact-form">
-            <div class="contact-us-head">
+            <!-- <div class="contact-us-head">
                 <h2>
                     contact us
                 </h2>
-            </div>
+            </div> -->
             <form id="contact-form" method="post" action="">
                 <label for="client-name">Name: </label>
-                <input class="input" type="text" name="client-name" id="client-name" required />
+                <input class="input" type="text" name="client-name" id="client-name" placeholder="Enter Your Name" required />
                 <label for="client-mail">email:</label>
-                <input class="input"  type="email" name="client-mail" id="client-mail" required />
+                <input class="input"  type="email" name="client-mail" id="client-mail" placeholder="ex. john@gmail.com" required />
                 <label for="video-duration">video duration</label>
                 <input class="input" type="number" min="0" max="200" id="duration" name="video-duration" placeholder="Duration in minutes"
                     required />
@@ -300,6 +328,113 @@
                 </textarea>
                 <input  type="submit" name="submit" id="submit-btn">
             </form>
+        </div>
+
+    </div>
+    <div class="faq-section">
+        <div class="faq-head">
+            <h3>FAQ's Answered.</h3>
+        </div>
+        <div class="faq-container">
+            <div class="faq-card">
+                <div class="faq-question">
+                    <p>why ?</p>
+                    <div class="faq-expand">
+                        <i id="caret" class="fa-solid fa-caret-down" onclick="toggleAnswer('faq1')"></i>
+                    </div>
+                </div>
+                <div class="answer" id="faq1">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">
+                    <p>why ?</p>
+                    <div class="faq-expand">
+                        <i id="caret" class="fa-solid fa-caret-down" onclick="toggleAnswer('faq2')"></i>
+                    </div>
+                </div>
+                <div class="answer" id="faq2">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">
+                    <p>why ?</p>
+                    <div class="faq-expand">
+                        <i id="caret" class="fa-solid fa-caret-down" onclick="toggleAnswer('faq3')"></i>
+                    </div>
+                </div>
+                <div class="answer" id="faq3">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">
+                    <p>why ?</p>
+                    <div class="faq-expand">
+                        <i id="caret" class="fa-solid fa-caret-down" onclick="toggleAnswer('faq4')"></i>
+                    </div>
+                </div>
+                <div class="answer" id="faq4">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">
+                    <p>why ?</p>
+                    <div class="faq-expand">
+                        <i id="caret" class="fa-solid fa-caret-down" onclick="toggleAnswer('faq5')"></i>
+                    </div>
+                </div>
+                <div class="answer" id="faq5">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">
+                    <p>why ?</p>
+                    <div class="faq-expand">
+                        <i id="caret" class="fa-solid fa-caret-down" onclick="toggleAnswer('faq6')"></i>
+                    </div>
+                </div>
+                <div class="answer" id="faq6">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">
+                    <p>why ?</p>
+                    <div class="faq-expand">
+                        <i id="caret" class="fa-solid fa-caret-down" onclick="toggleAnswer('faq7')"></i>
+                    </div>
+                </div>
+                <div class="answer" id="faq7">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">
+                    <p>why ?</p>
+                    <div class="faq-expand">
+                        <i id="caret" class="fa-solid fa-caret-down" onclick="toggleAnswer('faq8')"></i>
+                    </div>
+                </div>
+                <div class="answer" id="faq8">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">
+                    <p>why ?</p>
+                    <div class="faq-expand">
+                        <i id="caret" class="fa-solid fa-caret-down" onclick="toggleAnswer('faq9')"></i>
+                    </div>
+                </div>
+                <div class="answer" id="faq9">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+            </div>
+
+            <div class="faq-card">
+                <div class="faq-question">
+                    <p>why ?</p>
+                    <div class="faq-expand">
+                        <i id="caret" class="fa-solid fa-caret-down" onclick="toggleAnswer('faq10')"></i>
+                    </div>
+                </div>
+                <div class="answer" id="faq10">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+            </div>
         </div>
     </div>
     <footer>

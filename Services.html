@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+  <title>FAQs</title>
+  <style>
+    .faq {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .answer {
+      display: none;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
-    <h1>Helloooo!</h1>
+  <div class="faq" onclick="toggleAnswer('faq1')">Question 1: What services do you offer?</div>
+  <div class="answer" id="faq1">We offer video editing, graphic design, photo editing, audio editing and fixing, and more.</div>
+
+  <div class="faq" onclick="toggleAnswer('faq2')">Question 2: How can I contact you?</div>
+  <div class="answer" id="faq2">You can contact us through our website or email us at info@thirdeyestudios.com.</div>
+
+  <script>
+    function toggleAnswer(id) {
+      var answer = document.getElementById(id);
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    }
+  </script>
 </body>
 </html>

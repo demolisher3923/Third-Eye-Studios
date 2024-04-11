@@ -247,12 +247,13 @@ span {
     cursor: pointer;
     border-radius: 10px;
     background: #f2f2f2;
-    box-shadow:  5px 5px 12px #bebebe,
-                 -5px -5px 12px #bebebe;
+    box-shadow: 5px 5px 12px #bebebe,
+        -5px -5px 12px #bebebe;
     /* border: 1px solid black; */
 }
-.service-ov-card:hover{
-    background:#f2eacb59;
+
+.service-ov-card:hover {
+    background: #f2eacb59;
     transition: all ease-in .3s;
 }
 
@@ -317,7 +318,7 @@ span {
 .about-section {
     height: 100dvh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.295) , rgba(0, 0, 0, 0.829) ,black ) ,url(./assets/device_02.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.829), black), url(./assets/device_02.jpg) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -325,23 +326,26 @@ span {
     justify-content: space-evenly;
 }
 
-.about-head{
+.about-head {
     height: auto;
     width: 80%;
     /* border: 1px solid red; */
 }
-.about-head h2{
+
+.about-head h2 {
     font-size: 3rem;
     color: #fff;
     font-family: poppins;
     font-weight: 500;
 }
-.about-contents{
+
+.about-contents {
     height: auto;
     width: 80%;
     /* border: 1px solid red; */
 }
-.about-contents p{
+
+.about-contents p {
     font-size: 1.5rem;
     color: #fff;
     font-family: poppins;
@@ -648,7 +652,7 @@ swiper-slide img {
     display: flex;
     flex-direction: column;
     padding: .5rem;
-    background:#ffff;
+    background: #ffff;
     border-radius: 5px;
     border: none;
     padding-top: 3rem;
@@ -753,29 +757,32 @@ label {
 }
 
 
-.faq-section{
+.faq-section {
     height: auto;
     width: 100%;
-    background:#f2f2f2;
+    background: #f2f2f2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
 }
-.faq-head{
+
+.faq-head {
     height: auto;
     width: 90%;
     text-align: center;
     /* margin-top: 1rem; */
     /* border: 1px solid red; */
 }
-.faq-head h3{
+
+.faq-head h3 {
     font-size: 2.5rem;
     font-weight: 700;
     font-family: poppins;
 }
-.faq-container{
+
+.faq-container {
     height: auto;
     width: 90%;
     display: flex;
@@ -785,7 +792,8 @@ label {
     padding: .5rem;
     /* border: 1px solid red; */
 }
-.faq-card{
+
+.faq-card {
     height: auto;
     width: 80%;
     display: flex;
@@ -799,7 +807,8 @@ label {
     padding: .5rem;
     /* border: 1px solid black; */
 }
-.faq-question{
+
+.faq-question {
     height: auto;
     width: 100%;
     display: flex;
@@ -807,16 +816,20 @@ label {
     justify-content: space-between;
     /* border: 1px solid red; */
 }
-.faq-question p{
+
+.faq-question p {
     font-size: 1.3rem;
     font-family: poppins;
     font-weight: 500;
 }
-#caret{
+
+#caret {
     font-size: 1rem;
     color: #1b222c;
+    cursor: pointer;
 }
-.answer{
+
+.answer {
     width: 100%;
     font-size: 1.1rem;
     font-family: poppins;
@@ -913,7 +926,7 @@ footer {
     width: auto;
     text-align: center;
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 2rem;
     justify-content: flex-start;
     /* border: 1px solid green; */
@@ -925,7 +938,7 @@ footer {
     font-size: 2.5rem;
     text-decoration: none;
     border-radius: 50%;
-    color:#bebebe;
+    color: #bebebe;
     /* background: #bebebe; */
 }
 
@@ -952,10 +965,12 @@ footer {
     margin-top: .5rem;
     /* border: 1px solid red; */
 }
-.footer-row-lower a{
+
+.footer-row-lower a {
     text-decoration: none;
     color: #f2eacb;
 }
+
 .copy-right {
     color: #f2eacb;
     font-size: .9rem;
@@ -982,7 +997,7 @@ footer {
 
 
 /* contact us page */
-.contact-us-page{
+.contact-us-page {
     height: 100dvh;
     width: 100%;
     display: flex;

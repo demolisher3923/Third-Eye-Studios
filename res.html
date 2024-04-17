@@ -4,13 +4,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {margin:0;font-family:Arial}
 
 .topnav {
+  height: 7rem;
+  width: 100%;
   overflow: hidden;
   background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.logo-box{
+  height: 5rem;
+  width: auto;
+  margin-left: 2rem;
+}
+.logo-box img{
+  height: 100%;
+  width: 100%;
+}
+.nav-links{
+  margin-right: 2rem;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+}
 .topnav a {
   float: left;
   display: block;
@@ -18,12 +42,12 @@ body {margin:0;font-family:Arial}
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.2rem;
+  font-weight: 500;    
+  font-family: poppins;
 }
-
-.active {
-  background-color: #04AA6D;
-  color: white;
+.topnav a:hover{
+  color: #da2343;
 }
 
 .topnav .icon {
@@ -36,7 +60,8 @@ body {margin:0;font-family:Arial}
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 1.2rem;
+  font-weight: 500;    
   border: none;
   outline: none;
   color: white;
@@ -45,7 +70,9 @@ body {margin:0;font-family:Arial}
   font-family: inherit;
   margin: 0;
 }
-
+.dropdown .dropbtn:hover{
+  color: #da2343;
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -64,10 +91,7 @@ body {margin:0;font-family:Arial}
   text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
-}
+
 
 .dropdown-content a:hover {
   background-color: #ddd;
@@ -77,6 +101,22 @@ body {margin:0;font-family:Arial}
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.pf-btn{
+  height: 2.2rem;
+  width: auto;
+  font-size: 1.2rem;
+  font-family: poppins;
+  cursor: pointer;
+  font-weight: 500;
+  border:none;
+  border-radius: .3rem;
+}
+.pf-btn:hover{
+  background: #da2343;
+  color: #ffffff;
+  transition: all .3s ease;
+}
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -113,27 +153,26 @@ body {margin:0;font-family:Arial}
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
+  <div class="logo-box">
+    <img src="./assets/TES-main-logo.png" alt="">
+  </div>
+  <div class="nav-links">
+  <a href="#home" class="active">About</a>
   <div class="dropdown">
     <button class="dropbtn">Dropdown 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="#">Photo Editing</a>
+      <a href="#">Video Editing</a>
+      <a href="#">Audio Editing</a>
+      <a href="#">Graphic Design</a>
     </div>
   </div> 
-  <a href="#about">About</a>
+  <a href="#about">contact us</a>
+  <a href="#about"> <button class="pf-btn">Portfolio</button></a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-
-<div style="padding-left:16px">
-  <h2>Responsive Topnav with Dropdown</h2>
-  <p>Resize the browser window to see how it works.</p>
-  <p>Hover over the dropdown button to open the dropdown menu.</p>
 </div>
 
 <script>

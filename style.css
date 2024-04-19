@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -1004,4 +1006,91 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+
+/* about us page  */
+
+.about-page {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f6f5ef;
+}
+
+.about-head {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./assets/about-head.jpg) no-repeat;
+    background-size: cover;
+    /* border: 1px solid red; */
+}
+
+.about-head h1 {
+    height: 100%;
+    width: 100%;
+    font-size: 8rem;
+    font-family: poppins;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.163), rgba(0, 0, 0, 0.784));
+    backdrop-filter: blur(3px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-body {
+    height: auto;
+    width: 90%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* padding: .5rem; */
+    /* border: 1px solid black; */
+}
+
+.about-row {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+}
+
+.about-row:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.img-bx {
+    height: auto;
+    width: 48%;
+}
+
+.img-bx img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #da2343;
+    outline: 2px solid #f2eacb;
+    outline-offset: -15px;
+    padding: .3rem;
+}
+
+.about-txt {
+    width: 48%;
+}
+
+.about-txt p {
+    font-size: 1.3rem;
+    font-family: poppins;
 }
